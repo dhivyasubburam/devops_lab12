@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app-blue:
-    image: <your-dockerhub-username>/node-app:latest
+    image: dhivyassnu/labexercise:latest
     container_name: app-blue
     ports:
       - "3001:3000"  # Blue instance mapped to port 3001
@@ -10,7 +10,7 @@ services:
       - NODE_ENV=production
 
   app-green:
-    image: <your-dockerhub-username>/node-app:latest
+    image: dhivyassnu/labexercise:latest
     container_name: app-green
     ports:
       - "3002:3000"  # Green instance mapped to port 3002
